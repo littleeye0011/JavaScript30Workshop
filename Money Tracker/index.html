@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>โปรแกรมรายรับ - รายจ่าย</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <h2>โปรแกรมรายรับ - รายจ่าย</h2>
@@ -16,35 +15,36 @@
       <div class="income-expense-container">
         <div>
           <h4>รายรับ</h4>
-          <p id="money-plus" class="money plus">฿5000</p>
+          <p id="money-plus" class="money plus"></p>
         </div>
         <div>
           <h4>รายจ่าย</h4>
-          <p id="money-minus" class="money minus">฿200</p>
+          <p id="money-minus" class="money minus"></p>
         </div>
       </div>
       <h3>ประวัติธุรกรรม</h3>
-      <ul id="list" class="list">
-        <li class="minus">
-          ค่าซ่อมรถ <span>- ฿400</span><button class="delete-btn">X</button>
-        </li>
-
-        <li class="plus">
-          เงินเดือน <span>+ ฿40000</span><button class="delete-btn">X</button>
-        </li>
-      </ul>
+      <ul id="list" class="list"></ul>
       <h3>เพิ่มธุรกรรม</h3>
       <form id="form">
         <div class="form-control">
-          <label for="text">ชื่อรายการ</label>
-          <input type="text" id="text" placeholder="ชื่อธุรกรรม" />
+          <label for="text">ชื่อธุรกรรม</label>
+          <input
+            type="text"
+            id="text"
+            placeholder="ชื่อธุรกรรม"
+            autocomplete="off"
+          />
         </div>
         <div class="form-control">
           <label for="amount">จำนวนเงิน</label>
           <input type="number" id="amount" placeholder="จำนวนเงิน" />
         </div>
-        <button class="btn">เพิ่มธุรกรรม</button>
+        <button class="btn-income" id="btn-income"">
+          รายรับ
+        </button>
+        <button class="btn-expense" id="btn-expense">รายจ่าย</button>
       </form>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
