@@ -110,3 +110,12 @@ ul.songs li {
   max-width: 100%;
   width: 500px;
 }
+
+.more {
+  display: flex;
+  justify-content: center;
+}
+
+.more .btn {
+  margin: 10px;
+}
