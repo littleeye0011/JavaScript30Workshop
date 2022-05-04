@@ -19,7 +19,7 @@
       <form id="level-form">
         <label>Level:</label>
         <select id="level-select">
-          <option value="easy">ง่าย</option>
+          <option value="easy" selected>ง่าย</option>
           <option value="medium">ปานกลาง</option>
           <option value="hard">ยาก</option>
         </select>
@@ -34,9 +34,10 @@
         autocomplete="off"
         placeholder="พิมพ์ตามตัวอักษร"
       />
+      <button id="start-btn" class="start-btn">เริ่มเกม</button>
       <p class="time-container">เวลา <span id="time"></span> วินาที</p>
       <p class="score-container"><span id="score"></span> คะแนน</p>
-      <div id="gameover-container" class="gameover-container">จบเกมมมม</div>
+      <div id="gameover-container" class="gameover-container"></div>
     </div>
   </body>
   <script src="script.js"></script>
