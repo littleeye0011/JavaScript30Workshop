@@ -9,6 +9,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -31,4 +32,12 @@ img {
 .show-reveal {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.clock.flip-clock-wrapper {
+  width: auto;
+}
+
+.flip-clock-dot {
+  background: #ccc;
 }

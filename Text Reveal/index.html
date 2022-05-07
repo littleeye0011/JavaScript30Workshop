@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Reveal</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flipclock.css" />
   </head>
   <body>
+    <div class="clock"></div>
     <div class="container">
       <section class="content">
         <img
@@ -57,12 +59,29 @@
         <div class="text">
           <h2>Sunrise</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quae
-            ipsum quibusdam, corporis nisi, voluptate aliquam veritatis
-            laudantium dicta laborum culpa delectus, unde architecto vel dolorem
-            soluta. Nemo minima sint explicabo animi, quaerat dolorum cupiditate
-            architecto provident ipsam tenetur! Alias voluptas inventore ab,
-            dolorem iste cupiditate quisquam sit libero earum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            laboriosam aliquid molestiae ratione officia vitae modi placeat
+            obcaecati blanditiis quasi beatae nisi quo architecto, provident
+            repudiandae hic repellat? Sequi delectus officia optio minima
+            laudantium, nihil iusto possimus fugiat quo maxime. Vero,
+            reprehenderit ipsum minus, animi illum repudiandae veniam qui velit
+            aut, ut veritatis necessitatibus tempore vitae similique cumque
+            fugiat adipisci minima iste iure? Optio explicabo iste neque
+            obcaecati libero repellendus quas et modi sint architecto sequi est
+            fugit, deleniti molestias, natus error incidunt quo. Voluptate, unde
+            placeat! Dignissimos minus quis nihil unde cumque ea beatae deserunt
+            nobis sapiente rerum sunt labore doloribus rem, officia voluptatum
+            ipsa obcaecati odio tenetur quae delectus culpa dolores. Quisquam
+            officiis suscipit facere eveniet doloremque voluptates earum velit,
+            voluptatem nesciunt! Ab, veniam! In atque suscipit accusantium
+            sapiente doloribus, omnis, illo architecto inventore iusto aperiam
+            delectus est facilis fugiat a quia voluptatibus id eveniet sed sequi
+            labore quis earum officia eos? Enim vitae debitis, quis pariatur
+            saepe odit aspernatur illum maiores sunt magnam optio incidunt est
+            deleniti veritatis quibusdam dolorem sequi perspiciatis, ab at
+            repellendus explicabo repudiandae! Fugiat ex tempora eaque nobis
+            exercitationem laudantium, adipisci perspiciatis architecto, et
+            alias, nesciunt corporis! Fugit neque illo iste suscipit soluta!
           </p>
         </div>
       </section>
@@ -84,6 +103,13 @@
         </div>
       </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="flipclock.js"></script>
+    <script type="text/javascript">
+      let clock = $(".clock").FlipClock({
+        clockFace: "TwentyFourHourClock",
+      });
+    </script>
   </body>
   <script src="script.js"></script>
 </html>
