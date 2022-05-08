@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Music API</h1>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 class="title" id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio id="audio" src="" controls hidden></audio>
+      <div class="img-container">
+        <img src="" alt="" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play" class="action-btn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/fdc7c658cc.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
