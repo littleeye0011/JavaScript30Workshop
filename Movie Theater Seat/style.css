@@ -27,10 +27,17 @@ body {
 }
 
 .screen {
-  background-color: #60606e;
+  background-color: #fff;
   width: 100%;
-  height: 5px;
-  margin-bottom: 20px;
+  height: 70px;
+  margin: 10px 0;
+  box-shadow: 0 3px 15px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-60deg);
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
 }
 
 .seat {
@@ -83,4 +90,18 @@ body {
 
 .showcase li small {
   margin-right: 2px;
+}
+
+.showcase.seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+p.text span {
+  color: greenyellow;
 }
