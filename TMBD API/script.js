@@ -2,7 +2,6 @@ const date = new Date();
 let years = date.getFullYear();
 
 const apiKey = "07faef61cdf5a6c5e2032f4c4e54c366";
-// let years = ;
 const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&year=${years}`;
 
 const content = document.getElementById("content");
