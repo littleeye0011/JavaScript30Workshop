@@ -3,14 +3,20 @@
 }
 
 body {
-  background: #fff;
+  background-color: #d9d2d9;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%233b3841' fill-opacity='0.44'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
+  margin: 215px auto auto auto;
   overflow: hidden;
+  background-color: #f0f0f0;
+  width: 800px;
+  height: 500px;
 }
 
 h1 {
@@ -158,6 +164,11 @@ i {
 }
 
 .add-container.show {
+  position: absolute;
+  top: 215px;
+  width: 800px;
+  height: 500px;
+  max-width: 100%;
   opacity: 1;
   z-index: 2;
 }
@@ -179,4 +190,8 @@ i {
   min-width: 500px;
   min-height: 50%;
   outline: none;
+}
+
+.card.left {
+  transform: translate(-50%) rotateY(45deg);
 }
